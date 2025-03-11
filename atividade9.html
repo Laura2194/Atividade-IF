@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade9</title>
+</head>
+
+<body>
+    <Script>
+        let ano_atual = parseInt(prompt("Digite o ano atual"));
+        let ano_nascimento = parseInt(prompt("Digite seu ano de nascimento"));
+        let idade = (ano_atual - ano_nascimento);
+
+        if (idade <16 ){
+            alert(`Voce não pode votar`)
+        }
+        else if (16 <= idade < 18) {
+            alert (`O voto é facultativo para voce`)
+        }
+        else if (18 <=idade <= 70 ) {
+            alert (`O voto é obrigatório para voce`)
+        }
+    else {
+        alert(`O voto ´facultativo para voce`)
+    }
+
+
+
+
+
+
+    </Script>
+</body>
+
+</html>

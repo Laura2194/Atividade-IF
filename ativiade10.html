@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade10</title>
+</head>
+<body>
+    <script>
+
+var sm= parseFloat(prompt("Qual foi o seu saldo médio?"))
+
+if(sm >= 201 && sm <= 400){
+    var c1 = sm * 0.2
+    alert(`Você teve um saldo médio de $${sm} e seu crédito será de $${c1.toFixed(2)}`)
+}else if (sm >= 401 && sm <= 600){
+   var c2 = sm * 0.3
+    alert(`Você teve um saldo médio de $${sm} e seu cédito será de $${c2.toFixed(2)}`)
+
+}else if (sm>= 601){
+    var c3 = sm *0.4
+    alert(`Você teve um saldo médio de $${sm} e seu crédito será de $${c3.toFixed(2)}`)
+}else{
+    alert(`Você teve um saldo médio de $${sm} e não terá crédito`)
+}
+
+    </script>
+</body>
+</html>

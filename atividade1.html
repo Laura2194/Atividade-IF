@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade1</title>
+</head>
+
+<body>
+    <script>
+
+        var anos = parseInt(prompt("Digite o ano atual"));
+
+        var bisexeto = (anos % 4 == 0 && anos % 100 != 0) || anos % 400 == 0;
+
+        if (bisexeto){
+            alert("O ano" +  anos  + "é bisexeto");
+        } else {
+            alert(`Ano não é bisexto`);
+        }
+
+
+    </script>
+
+</body>
+
+</html>

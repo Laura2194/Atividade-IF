@@ -8,31 +8,21 @@
 <body>
     <script>
 
-let num1 = parseFloat(prompt("Digite o primeiro número:"));
-    let num2 = parseFloat(prompt("Digite o segundo número:"));
-    let num3 = parseFloat(prompt("Digite o terceiro número:"));
-   
-    if (num1 > num2 && num1 > num3 && num3 > num2) {
-        alert (`Os números em ordem decrescente são: ${num1}, ${num3} e ${num2}`);
-    }
-    else if (num1 > num2 && num1 > num3 && num2 > num3) {
-        alert (`Os números em ordem decrescente são: ${num1}, ${num2} e ${num3}`);
-    }
-    else if (num2 > num1 && num2 > num3 && num1 > num3) {
-        alert (`Os números em ordem decrescente são: ${num2}, ${num1} e ${num3}`);
-    }
-    else if (num2 > num1 && num2 > num3 && num3 > num1) {
-        alert (`Os números em ordem decrescente são: ${num2}, ${num3} e ${num1}`);
-    }
-    else if (num3 > num1 && num3 > num2 && num1 > num2) {
-        alert (`Os números em ordem decrescente são: ${num3}, ${num1} e ${num2}`);
-    }
-    else if (num3 > num1 && num3 > num2 && num2 > num1) {
-        alert (`Os números em ordem decrescente são: ${num3}, ${num2} e ${num1}`);
-    }
-    else {
-        alert (`Os números em ordem decrescente são: ${num1}, ${num2} e ${num3}`);
-    }
+        let idade = parseInt(prompt("Digite a sua idade:"));
+
+        if (idade >= 5 && idade <= 7) {
+            alert("Infantil A");
+        } else if (idade >= 8 && idade <= 10) {
+            alert("Infantil B");
+        } else if (idade >= 11 && idade <= 13) {
+            alert("Juvenil A");
+        } else if (idade >= 14 && idade <= 17) {
+            alert("Juvenil B");
+        } else if (idade >= 18) {
+            alert("Adulto");
+        } else {
+            alert("Idade inválida");
+        }
     </script>
 </body>
 </html>
